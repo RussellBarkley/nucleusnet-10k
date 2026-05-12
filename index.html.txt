@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NucleusNet 10K Viewer</title>
+    <style>
+        body { margin: 0; padding: 0; }
+        #viewer { width: 100vw; height: 100vh; }
+    </style>
+</head>
+<body>
+    <div id="viewer"></div>
+    <script src="openseadragon/openseadragon.min.js"></script>
+    <script>
+        OpenSeadragon({
+            id: "viewer",
+            prefixUrl: "openseadragon/images/",
+            tileSources: "nucleusnet_10k.dzi"
+        });
+    </script>
+</body>
+</html>
